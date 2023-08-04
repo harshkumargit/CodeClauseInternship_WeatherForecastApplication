@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+  <div id="clockAndDate" class="clock-date-container"></div>
+  <video id="videoBackground" autoplay muted loop>
+    <source src="video/bg2.mp4" type="video/mp4">
+    <!-- Add additional source elements for other video formats if needed -->
+  </video>
+  <div class="container">
+    <h1>Weather Forecast</h1>
+    <form id="weatherForm">
+      <input type="text" id="cityInput" placeholder="Enter city name" required>
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="weather-container">
+      <div class="location">Loading...</div>
+      <div class="temperature">Loading...</div>
+      <div class="description">Loading...</div>
+      <i class="weather-icon" data-icon="weather-icon-code"></i>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
